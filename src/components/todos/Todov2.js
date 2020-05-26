@@ -4,13 +4,11 @@ const Todo = props => {
     return (
         <div>
             <span>
-                {props.todo.text}
+                {props.text}
             </span>
-            <button
-                onClick={
-                    () =>
-                        props.delete(props.todo.id)
-                }>
+            <button onClick={
+                () => props.delete(props.text)
+            }>
                 DELETE
             </button>
         </div>
