@@ -4,6 +4,7 @@ import App from './App';
 import manageTodo from './reducers/manageTodo';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 let store = createStore(manageTodo);
 
